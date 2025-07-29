@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MagnificationGesture: View {
+struct MagnificationGestures: View {
     //Practice One
     @GestureState private var magnifyValue: CGFloat = 1.0
     @State private var lastAmount: CGFloat = 1.0
@@ -39,7 +39,7 @@ struct MagnificationGesture: View {
 }
 
 //Practice Two
-extension MagnificationGesture {
+extension MagnificationGestures {
     private var titleSection: some View {
         HStack {
             Circle().frame(width: 35, height: 35)
@@ -80,7 +80,7 @@ extension MagnificationGesture {
 }
 
 //Practice One
-extension MagnificationGesture {
+extension MagnificationGestures {
     private var practiceOne: some View {
         Text("Hello, World!")
             .font(.title)
@@ -103,5 +103,5 @@ extension MagnificationGesture {
 }
 
 #Preview {
-    MagnificationGesture()
+    MagnificationGestures()
 }
