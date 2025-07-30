@@ -6,6 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		04CE33562E39FFF00075ED6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 047D778F2E38C62A003CAEAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAF1FBBE0D8BB754E1FD9BF4;
+			remoteInfo = "Build Target";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		047D77972E38C62A003CAEAD /* SwiftUI-IntermediateLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-IntermediateLearning.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -46,6 +56,22 @@
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		AAF1FBBE0D8BB754E1FD9BF4 /* Build Target */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-c \"${A4FB9DF}\"";
+			buildConfigurationList = 04CE335A2E3A01370075ED6D /* Build configuration list */;
+			buildPhases = (
+			);
+			buildToolPath = /bin/sh;
+			dependencies = (
+			);
+			name = "Build Target";
+			passBuildSettingsInEnvironment = 1;
+			productName = "Build Target";
+		};
+/* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
 		047D77962E38C62A003CAEAD /* SwiftUI-IntermediateLearning */ = {
@@ -100,33 +126,11 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AAF1FBBE0D8BB754E1FD9BF4  /* Build Target */,
+				AAF1FBBE0D8BB754E1FD9BF4 /* Build Target */,
 				047D77962E38C62A003CAEAD /* SwiftUI-IntermediateLearning */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXTargetDependency section */
-		2C22B42381EEF7ECCEFD9BF4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AAF1FBBE0D8BB754E1FD9BF4 /* Build Target */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXLegacyTarget section */
-		AAF1FBBE0D8BB754E1FD9BF4 /* Build Target */ = {
-			isa = PBXLegacyTarget;
-			buildArgumentsString = "-c \"${A4FB9DF}\"";
-			buildPhases = (
-			);
-			buildToolPath = /bin/sh;
-			dependencies = (
-			);
-			name = "Build Target";
-			passBuildSettingsInEnvironment = 1;
-			productName = "Build Target";
-		};
-/* End PBXLegacyTarget section */
 
 /* Begin PBXResourcesBuildPhase section */
 		047D77952E38C62A003CAEAD /* Resources */ = {
@@ -147,6 +151,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C22B42381EEF7ECCEFD9BF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAF1FBBE0D8BB754E1FD9BF4 /* Build Target */;
+			targetProxy = 04CE33562E39FFF00075ED6D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		047D77A32E38C62D003CAEAD /* Debug */ = {
@@ -328,6 +340,25 @@
 			};
 			name = Release;
 		};
+		04CE33572E39FFF10075ED6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Build Target";
+			};
+			name = Debug;
+		};
+		04CE33582E39FFF10075ED6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				PRODUCT_NAME = "Build Target";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -345,6 +376,15 @@
 			buildConfigurations = (
 				047D77A62E38C62D003CAEAD /* Debug */,
 				047D77A72E38C62D003CAEAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04CE335A2E3A01370075ED6D /* Build configuration list */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04CE33572E39FFF10075ED6D /* Debug */,
+				04CE33582E39FFF10075ED6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
