@@ -33,7 +33,10 @@ struct MaskMaterials: View {
         GeometryReader { geometry in
             ZStack(alignment: .leading) {
                 Rectangle()
-                    .foregroundStyle(.blue)
+//                    .foregroundStyle(.blue)
+                    .fill(
+                        LinearGradient(gradient: Gradient(colors: [.yellow, .orange, .pink]), startPoint: .leading, endPoint: .trailing)
+                    )
                     .frame(width: CGFloat(rating) / 5 * geometry.size.width)
                 
             }
